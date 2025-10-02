@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(109, 180, 109);
+}
+
+.logo {
+    display: flex;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(58, 91, 58);
+    
+}
+header a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 15px;
+}
+header a:hover {
+    background: #ddd;
+    color: #333;
+}
+
+.topnav {
+    display: flex;
+    width: 400px;
+    /* hvis man vil flytte noget i midten vandret, så bruger man 'justify-content'*/
+    justify-content: space-between;
+}
+.icon {
+    display: none;
+}
+
+.værdier-title {
+    text-align: center;
+    padding: 15px;
+    max-width: 750px;
+    border: 2px solid #2e5c2e;  
+    border-radius: 10px;                         
+    margin: 20px auto; 
+    background-color: #e0f2e0;
+}
+
+.værdier-container {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px;
+    margin: 20px;
+}
+
+.værdi {
+    flex: 1;                
+    border: 2px solid #2e5c2e;
+    border-radius: 10px;
+    background-color: #e0f2e0;
+    padding: 15px;
+    text-align: center;
+}
+
+@media screen and (max-width: 670px) {
+    .topnav a {
+        display: none;
+    }
+   .topnav .icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+   }
+   /* 'responsive' gør at burgeren kan trykkes på, og når den trykkes på, så kommer de andre knapper frem */
+   .responsive a {
+    display: block;
+   }
+   .responsive {
+    flex-direction: column;
+    padding-top: 30px;
+    width: 100%;
+    /* hvis man vil flytte noget i midten lodret, så bruger man 'align-items'*/
+    align-items: center;
+   }
+    .værdier-container {
+        flex-direction: column;  
+    }
+
+    .værdi {
+        width: 100%; 
+        margin-bottom: 15px;   
+    }
+}

@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(109, 180, 109);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(58, 91, 58);
+    
+}
+header a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 15px;
+}
+header a:hover {
+    background: #ddd;
+    color: #333;
+}
+.logo {
+    display: flex;
+}
+article {
+    padding: 15px;
+    max-width: 750px;
+    margin-left: 20px;
+    border: 2px solid #2e5c2e;  
+    border-radius: 10px;          
+    padding: 20px;                
+    margin: 20px 0; 
+    background-color: #e0f2e0; 
+    font-size: 21px;  
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+
+.venstre {
+    flex: 0 0 auto;  
+}
+
+.billede {
+    width: 400px;     
+    height: auto;
+    display: block;
+    margin: 0;
+    margin-right: 15px; 
+}
+
+
+.højre {
+    flex: 1;           
+}
+
+.højre article {
+    padding: 10px;     
+    margin: 0;         
+    text-align: left;
+    max-width: none;    
+    border: 2px solid #2e5c2e;  
+    border-radius: 10px;          
+    background-color: #e0f2e0;   
+}
+
+.quote {
+    padding: 10px;     
+    margin-bottom: 20px;         
+    text-align: left;
+    max-width: 375px;    
+    border: 2px solid #2e5c2e;  
+    border-radius: 10px;          
+    background-color: #e0f2e0;  
+    display: block; 
+}
+
+.quote-2 {
+    padding: 10px;     
+    margin-bottom: 20px;        
+    text-align: left;
+    max-width: 375px;    
+    border: 2px solid #2e5c2e;  
+    border-radius: 10px;          
+    background-color: #e0f2e0;  
+    display: block; 
+    font-size: 17px
+}
+
+.quote-3 {
+    padding: 10px;     
+    margin: 0;         
+    text-align: left;
+    max-width: 375px;    
+    border: 2px solid #2e5c2e;  
+    border-radius: 10px;          
+    background-color: #e0f2e0;  
+    display: block; 
+    font-size: 17px
+}
+
+.quote, .quote-2, .quote-3 {
+    margin-left: 15px;
+}
+
+.topnav {
+    display: flex;
+    width: 400px;
+    /* hvis man vil flytte noget i midten vandret, så bruger man 'justify-content'*/
+    justify-content: space-between;
+}
+.icon {
+    display: none;
+}
+
+
+/* alt under er for en mobil format */
+@media screen and (max-width: 670px) {
+    .topnav a {
+        display: none;
+    }
+   .topnav .icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+   }
+   /* 'responsive' gør at burgeren kan trykkes på, og når den trykkes på, så kommer de andre knapper frem */
+   .responsive a {
+    display: block;
+   }
+   .responsive {
+    flex-direction: column;
+    padding-top: 30px;
+    width: 100%;
+    /* hvis man vil flytte noget i midten lodret, så bruger man 'align-items'*/
+    align-items: center;
+   }
+   .logo {
+    position: relative;
+    top: 0;
+    left: 0;
+   }
+   header {
+    /* så er min headers farve det samme når man er på mobilen, ellers forsvandt farven hver gang jeg gik på mobil formatten*/
+    background: rgb(58, 91, 58) !important;
+   }
+   .container {
+        flex-direction: column; 
+        margin: 10px;          
+    }
+
+    .billede {
+        width: 80%;              
+        max-width: 200px;       
+        margin: 0 auto 10px auto;
+    }
+
+    .højre {
+        flex: 1;             
+    }
+
+    .højre article {
+        width: 100%;        
+        padding: 10px;
+        box-sizing: border-box;  
+    }
+}
