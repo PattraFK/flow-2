@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburgermenu</title>
+    <link rel="stylesheet" href="politiker-hjemmeside.css">
+    <!-- ref til FontAwesomes stylesheet (så jeg kan bruge deres ikoner) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="robots" content="noindex">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">Alternativet</a>
+        </div>
+        <div class="topnav" id="myTopnav">
+            <a href="#">Forside</a>
+            <a href="politik-om-mig.html">om mig</a>
+            <a href="politik-kontakt.html">Kontakt</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+<div class="container">
+    <div class="venstre">
+        <img src="clara-wolf-small.jpg" alt="billede" class="billede">
+    </div>
+    <div class="højre">
+        <article>
+            <h1>Clara Wolf</h1>
+            <p>Clara Wolf stiller op som kandidat for Alternativet med dyb forpligtelse til grøn omstilling, sociale retfærdighed og unges vilkår. Hun træder ind på den politiske scene med en baggrund, der kombinerer akademiske kompetencer og engagement i ungdomsorganisationen, hvilket giver hende både teoretisk indsigt og praksisnær erfaring.
+            Clara har bl.a. været aktiv i Alternativets Unge, hvor hun sidder som kasserer og bidrager til at styrke de unges stemme og deltagelse i politik. 
+            lternativetsunge.dk
+            Hun har også tidligere været opstillet i Nordjyllands Storkreds til Folketinget, og har gennemgangen vist, at hun lægger stor vægt på uddannelse uden stress, vidensbaseret politik og at sikre gode muligheder for unge i Danmark.
+            Som kandidat ønsker Clara Wolf at fremme Alternativets kerneværdier: at miljøhensyn, demokrati og social retfærdighed ikke blot er idealer, men styrende principper for politiske beslutninger. Hun ser omstillingen til en bæredygtig fremtid som en mulighed for at gentænke økonomi, velfærd og samfundsansvar til fordel for både mennesker og natur</p>
+        </article>
+    </div>
+</div>
+<div class="quote">
+   <p>"Vi har ikke brug for mere snak - vi har brug for handling!"</p>
+</div>
+<div class="quote-2">
+       <p>"Clara Wolf er én af de mest markante unge stemmer, jeg har mødt. Jeg har kendt hende i nogle år nu, først gennem Ungdomsorganisationen (Alternativets Unge) og senere via hendes kandidatur, og hun udstråler en sjælden kombination af passion, integritet og en oprigtig tro på, at forandring er mulig."</p>
+</div>
+<div class="quote-3">
+    <p>"Clara er rolige, men bestemt. Hun taler ikke højest i lokalet, men hun sørger for, at det hun siger, tæller. Der er noget stabilt over hende - man har følelsen af, at hun mener det, hun siger, og at hun har tænkt sig om. Hun er ikke typen, der går på kompromis let, heller ikke når det ville være lettere at bøje sig med majoriteten. Det kan nogle gange gøre hende sårbar over for kritik, især fra dem, der foretrækker politik som mere taktisk spil end idealistisk engagement."</p>
+</div>
+    <!-- 'script' gør sådan så at hamburgeren kommer frem når det er for en mobilformat. vi fik burgeren fra linket helt øverst -->
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+        }
+    </script>
+</body>
+</html>
